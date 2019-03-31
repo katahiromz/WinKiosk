@@ -1,0 +1,10 @@
+﻿; <button-height>	<button-background-color>	<button-text-color>
+60	#EEEEEE	#000000
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Buttons
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; <button-text>	<button-width>	<command-id-or-url-or-command-line>
+< Back	80	#101
+Forward >	80	#102
+Address Bar	*	#105
+Go >	80	#106

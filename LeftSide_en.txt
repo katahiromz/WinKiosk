@@ -1,0 +1,6 @@
+﻿; <button-width>	<button-background-color>	<button-color>
+120	#EEEEEE	#000000
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Buttons
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; <button-text>	<button-height>	<command-id-or-url-or-command-line>

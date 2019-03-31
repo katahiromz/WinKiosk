@@ -1,0 +1,6 @@
+[submodule "SimpleBrowser"]
+	path = SimpleBrowser
+	url = https://github.com/katahiromz/SimpleBrowser.git
+[submodule "KeybdSystem"]
+	path = KeybdSystem
+	url = https://github.com/katahiromz/KeybdSystem.git
