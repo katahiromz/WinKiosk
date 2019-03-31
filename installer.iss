@@ -79,6 +79,7 @@ Name: "{group}\{cm:UninstallProgram,WinKiosk}"; Filename: "{uninstallexe}"
 [Run]
 Filename: "{app}\WinKiosk.exe"; Flags: nowait; Parameters: "--install"
 Filename: "notepad.exe"; Flags: nowait; Parameters: "{app}\{cm:ReadMeTxt}"
+Filename: "explorer.exe"; Flags: nowait; Parameters: "{app}"
 
 [UninstallRun]
 Filename: "{app}\WinKiosk.exe"; Flags: nowait; Parameters: "--uninstall"
