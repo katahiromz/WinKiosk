@@ -24,14 +24,14 @@ AllowNoIcons=yes
 LicenseFile=LICENSE.txt
 OutputDir=.
 OutputBaseFilename=WinKiosk-0.9-setup
-SetupIconFile=WinKiosk\res\Icon_1.ico
+SetupIconFile=icon.ico
 Compression=lzma
 SolidCompression=yes
-UninstallDisplayIcon={app}\WinKiosk.exe
+UninstallDisplayIcon={app}\SimpleBrowser.exe
 UsePreviousAppDir=yes
 VersionInfoCompany=Katayama Hirofumi MZ
 VersionInfoCopyright=Copyright (C) 2019 Katayama Hirofumi MZ.
-VersionInfoDescription=On-screen Keyboard
+VersionInfoDescription=Windows Kiosk System
 VersionInfoProductName=WinKiosk
 VersionInfoProductTextVersion=0.9
 VersionInfoProductVersion=0.9
@@ -41,13 +41,11 @@ VersionInfoVersion=0.9
 Name: "english"; MessagesFile:  "compiler:Default.isl"
 Name: "japanese"; MessagesFile: "compiler:Languages\Japanese.isl"
 
-[Tasks]
-Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"
-
 [Files]
 Source: "README.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "READMEJP.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "LICENSE.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "build\WinKiosk.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "build\SimpleBrowser.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "build\bin\KeybdSystem.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "build\bin\EasyEn.keybd"; DestDir: "{app}\plugins"; Flags: ignoreversion
@@ -58,33 +56,38 @@ Source: "build\bin\EasyJP.keybd"; DestDir: "{app}\plugins"; Flags: ignoreversion
 Source: "build\bin\StdJP.keybd"; DestDir: "{app}\plugins"; Flags: ignoreversion
 Source: "build\bin\FullJP.keybd"; DestDir: "{app}\plugins"; Flags: ignoreversion
 Source: "build\bin\SimpleNumPad.keybd"; DestDir: "{app}\plugins"; Flags: ignoreversion
-Source: "Upside_en.txt"; DestDir: "{app}\plugins"; Flags: ignoreversion
-Source: "Upside_ja.txt"; DestDir: "{app}\plugins"; Flags: ignoreversion
-Source: "Downside_en.txt"; DestDir: "{app}\plugins"; Flags: ignoreversion
-Source: "Downside_ja.txt"; DestDir: "{app}\plugins"; Flags: ignoreversion
-Source: "LeftSide_en.txt"; DestDir: "{app}\plugins"; Flags: ignoreversion
-Source: "LeftSide_ja.txt"; DestDir: "{app}\plugins"; Flags: ignoreversion
-Source: "RightSide_en.txt"; DestDir: "{app}\plugins"; Flags: ignoreversion
-Source: "RightSide_ja.txt"; DestDir: "{app}\plugins"; Flags: ignoreversion
+Source: "Upside_en.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "Upside_ja.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "Downside_en.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "Downside_ja.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "LeftSide_en.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "LeftSide_ja.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "RightSide_en.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "RightSide_ja.txt"; DestDir: "{app}"; Flags: ignoreversion
 
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
-Name: "{group}\WinKiosk"; Filename: "{app}\SimpleBrowser.exe"
+Name: "{group}\WinKiosk"; Filename: "{app}\WinKiosk.exe"
 Name: "{group}\{cm:ReadmeEnglish}"; Filename: "{app}\README.txt"
 Name: "{group}\{cm:ReadmeJapanese}"; Filename: "{app}\READMEJP.txt"
 Name: "{group}\{cm:LicenseEnglish}"; Filename: "{app}\LICENSE.txt"
 Name: "{group}\{cm:ProgramOnTheWeb,WinKiosk}"; Filename: "http://katahiromz.web.fc2.com"
 Name: "{group}\{cm:UninstallProgram,WinKiosk}"; Filename: "{uninstallexe}"
-Name: "{commondesktop}\WinKiosk"; Filename: "{app}\SimpleBrowser.exe"; Tasks: desktopicon
 
 [Run]
-Filename: "{app}\KeybdSystem.exe"; Description: "{cm:LaunchProgram,KeybdSystem}"; Flags: nowait postinstall skipifsilent
+Filename: "{app}\WinKiosk.exe"; Flags: nowait; Parameters: "--install"
+Filename: "notepad.exe"; Flags: nowait; Parameters: "{app}\{cm:ReadMeTxt}"
+
+[UninstallRun]
+Filename: "{app}\WinKiosk.exe"; Flags: nowait; Parameters: "--uninstall"
 
 [CustomMessages]
 english.ReadmeEnglish=ReadMe (English)
 english.ReadmeJapanese=ReadMe (Japanese)
 english.LicenseEnglish=License (English)
+english.ReadMeTxt=ReadMe.txt
 japanese.ReadmeEnglish=ReadMe (英語)
 japanese.ReadmeJapanese=読んでね (日本語)
 japanese.LicenseEnglish=ライセンス (英語)
+japanese.ReadMeTxt=ReadMeJP.txt
