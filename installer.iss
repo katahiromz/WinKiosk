@@ -64,6 +64,7 @@ Source: "LeftSide_en.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "LeftSide_ja.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "RightSide_en.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "RightSide_ja.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "SimpleBrowser\resource.h"; DestDir: "{app}"; Flags: ignoreversion
 
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
