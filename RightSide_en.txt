@@ -6,6 +6,8 @@
 ; <button-text>	<button-height>	<command-id-or-url-or-command-line>
 Home	60	#104
 Stop/Reload	60	#103
+Move Up	60	#132
+Move Down	60	#133
 Page Setup	60	#114
 Print Preview	60	#113
 Print...	60	#111
