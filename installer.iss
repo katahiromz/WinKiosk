@@ -49,12 +49,8 @@ Source: "build\WinKiosk.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "build\SimpleBrowser.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "build\bin\KeybdSystem.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "build\bin\EasyEn.keybd"; DestDir: "{app}\plugins"; Flags: ignoreversion
-Source: "build\bin\StdEn.keybd"; DestDir: "{app}\plugins"; Flags: ignoreversion
-Source: "build\bin\FullEn.keybd"; DestDir: "{app}\plugins"; Flags: ignoreversion
 Source: "build\bin\SimpleJP.keybd"; DestDir: "{app}\plugins"; Flags: ignoreversion
 Source: "build\bin\EasyJP.keybd"; DestDir: "{app}\plugins"; Flags: ignoreversion
-Source: "build\bin\StdJP.keybd"; DestDir: "{app}\plugins"; Flags: ignoreversion
-Source: "build\bin\FullJP.keybd"; DestDir: "{app}\plugins"; Flags: ignoreversion
 Source: "build\bin\SimpleNumPad.keybd"; DestDir: "{app}\plugins"; Flags: ignoreversion
 Source: "Upside_en.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "Upside_ja.txt"; DestDir: "{app}"; Flags: ignoreversion
