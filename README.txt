@@ -52,8 +52,8 @@ The button layout of SimpleBrowser is customizable by editing the following text
 
 ## Security
 
-If you want to use it as an information kiosk terminal, you may want to delete the useless printers.
+If you want to use it as an information kiosk terminal, you might have to delete the useless printers.
 
 In kiosk mode, the dotted menu ("...") and print preview are not available for security reason.
 
-If you start using this software as a kiosk terminal, please disconnect the physical keyboard.
+If you start using this software as kiosk terminal, please disconnect the physical keyboard.
