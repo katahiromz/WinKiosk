@@ -62,7 +62,7 @@ endif()
 subdirs(KeybdSystem SimpleBrowser)
 
 # WinKiosk.exe
-add_executable(WinKiosk WIN32 WinKiosk.cpp)
+add_executable(WinKiosk WIN32 WinKiosk.cpp WinKiosk_res.rc)
 target_compile_definitions(WinKiosk PRIVATE -DUNICODE)
 target_link_libraries(WinKiosk PRIVATE shlwapi)
 

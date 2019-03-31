@@ -24,7 +24,7 @@ AllowNoIcons=yes
 LicenseFile=LICENSE.txt
 OutputDir=.
 OutputBaseFilename=WinKiosk-0.9-setup
-SetupIconFile=icon.ico
+SetupIconFile=res\Icon_1.ico
 Compression=lzma
 SolidCompression=yes
 UninstallDisplayIcon={app}\SimpleBrowser.exe
@@ -40,6 +40,9 @@ VersionInfoVersion=0.9
 [Languages]
 Name: "english"; MessagesFile:  "compiler:Default.isl"
 Name: "japanese"; MessagesFile: "compiler:Languages\Japanese.isl"
+
+[Tasks]
+Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"
 
 [Files]
 Source: "README.txt"; DestDir: "{app}"; Flags: ignoreversion
@@ -71,6 +74,7 @@ Name: "{group}\{cm:ReadmeJapanese}"; Filename: "{app}\READMEJP.txt"
 Name: "{group}\{cm:LicenseEnglish}"; Filename: "{app}\LICENSE.txt"
 Name: "{group}\{cm:ProgramOnTheWeb,WinKiosk}"; Filename: "http://katahiromz.web.fc2.com"
 Name: "{group}\{cm:UninstallProgram,WinKiosk}"; Filename: "{uninstallexe}"
+Name: "{commondesktop}\WinKiosk"; Filename: "{app}\WinKiosk.exe"; Tasks: desktopicon
 
 [Run]
 Filename: "{app}\WinKiosk.exe"; Flags: nowait; Parameters: "--install"
