@@ -9,4 +9,4 @@ Stop/Reload	60	#103
 Print Preview	60	#113
 Print...	60	#111
 Cancel Printing	60	#131
-...	60	#117
+Keyboard	60	KeybdSystem.exe --name "Easy English Keyboard"

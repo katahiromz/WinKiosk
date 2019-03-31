@@ -58,6 +58,14 @@ Source: "build\bin\EasyJP.keybd"; DestDir: "{app}\plugins"; Flags: ignoreversion
 Source: "build\bin\StdJP.keybd"; DestDir: "{app}\plugins"; Flags: ignoreversion
 Source: "build\bin\FullJP.keybd"; DestDir: "{app}\plugins"; Flags: ignoreversion
 Source: "build\bin\SimpleNumPad.keybd"; DestDir: "{app}\plugins"; Flags: ignoreversion
+Source: "Upside_en.txt"; DestDir: "{app}\plugins"; Flags: ignoreversion
+Source: "Upside_ja.txt"; DestDir: "{app}\plugins"; Flags: ignoreversion
+Source: "Downside_en.txt"; DestDir: "{app}\plugins"; Flags: ignoreversion
+Source: "Downside_ja.txt"; DestDir: "{app}\plugins"; Flags: ignoreversion
+Source: "LeftSide_en.txt"; DestDir: "{app}\plugins"; Flags: ignoreversion
+Source: "LeftSide_ja.txt"; DestDir: "{app}\plugins"; Flags: ignoreversion
+Source: "RightSide_en.txt"; DestDir: "{app}\plugins"; Flags: ignoreversion
+Source: "RightSide_ja.txt"; DestDir: "{app}\plugins"; Flags: ignoreversion
 
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
