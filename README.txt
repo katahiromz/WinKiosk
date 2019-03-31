@@ -43,7 +43,7 @@ After installing WinKiosk with the installer, it's ready for kiosk terminal.
 
 When you restart Windows, WinKiosk will be launched automatically.
 
-The button layout of SimpleBrowser are customizable by editing the following text files:
+The button layout of SimpleBrowser is customizable by editing the following text files:
 
     Upside_en.txt
     Downside_en.txt
