@@ -1,6 +1,6 @@
 # WinKiosk by katahiromz
 
-WinKiosk is a freeware information kiosk terminal for Windows.
+WinKiosk is a freeware kiosk system for Windows.
 It works in Windows XP/Vista/7/10.
 
 ## Composition
