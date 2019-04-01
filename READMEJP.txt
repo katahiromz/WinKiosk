@@ -54,7 +54,7 @@ SimpleBrowser のボタンは
     LeftSide_ja.txt
     RightSide_ja.txt
 
-をメモ帳などで変更して SimpleBrowser を再読み込みすることにより、カスタマイズ可能です。
+をメモ帳などで変更して SimpleBrowser を再読み込みすることにより、カスタマイズ可能です (タブ区切りのテキスト)。
 
 ☆ セキュリティ
 

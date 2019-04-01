@@ -50,6 +50,8 @@ The button layout of SimpleBrowser is customizable by editing the following text
     LeftSide_en.txt
     RightSide_en.txt
 
+They are tab-separated text files.
+
 ## Security
 
 If you want to use it as an information kiosk terminal, you might have to delete the useless printers.
