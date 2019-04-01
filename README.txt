@@ -41,7 +41,7 @@ You have to remember Alt+F4, Ctrl+K and Alt+F.
 
 After installing WinKiosk with the installer, it's ready for kiosk terminal.
 
-Please set the OS active time if you use Windows 10.
+Please set the OS active hours if you use Windows 10.
 
 When you restart Windows, WinKiosk will be launched automatically.
 
