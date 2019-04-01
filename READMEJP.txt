@@ -55,6 +55,7 @@ SimpleBrowser のボタンは
     RightSide_ja.txt
 
 をメモ帳などで変更して SimpleBrowser を再読み込みすることにより、カスタマイズ可能です (タブ区切りのテキスト)。
+コマンドID (ID_*) は、resource.hで定義されています。
 
 ☆ セキュリティ
 
