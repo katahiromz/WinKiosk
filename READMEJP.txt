@@ -1,7 +1,7 @@
 ﻿WinKiosk by 片山博文MZ
 ----------------------
 
-WinKiosk は、Windows用の無料の情報キオスク端末です。
+WinKiosk は、Windows用の無料の情報キオスク端末システムです。
 Windows XP/Vista/7/10で動作します。
 
 ☆ 構成
@@ -42,6 +42,8 @@ Alt+F4 と Ctrl+K と Alt+F は覚えておいて下さい。
 
 WinKiosk をインストーラでインストールしたら、キオスク端末として利用する準備は、
 完了しています。
+
+Windows 10の場合は、OSのアクティブ時間を設定して下さい。
 
 Windowsを再起動すると、自動的に WinKiosk が起動されます。
 
