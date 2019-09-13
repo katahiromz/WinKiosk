@@ -88,12 +88,12 @@ Name: "{group}\{cm:UninstallProgram,WinKiosk}"; Filename: "{uninstallexe}"
 Name: "{commondesktop}\WinKiosk"; Filename: "{app}\WinKiosk.exe"; Tasks: desktopicon
 
 [Run]
-Filename: "{app}\setupper.exe"; Flags: nowait; Parameters: "--install"; Tasks: regstartup
+Filename: "{app}\setupper.exe"; Parameters: "--install"; Tasks: regstartup
 Filename: "notepad.exe"; Flags: nowait; Parameters: "{app}\{cm:ReadMeTxt}"
 Filename: "explorer.exe"; Flags: nowait; Parameters: "{app}"
 
 [UninstallRun]
-Filename: "{app}\setupper.exe"; Flags: nowait; Parameters: "--uninstall"; Tasks: regstartup
+Filename: "{app}\setupper.exe"; Parameters: "--uninstall"; Tasks: regstartup
 
 [CustomMessages]
 english.ReadmeEnglish=ReadMe (English)
