@@ -43,8 +43,9 @@ Please set the OS active hours if you use in Windows 10.
 
 If WinKiosk is registered to Windows startup,
 WinKiosk will be launched automatically when you restart Windows.
-To register WinKiosk to Windows startup,
-or to unregister WinKiosk from Windows startup, please use setupper.exe.
+
+To register WinKiosk to Windows startup, please use setupper.exe.
+To unregister WinKiosk from Windows startup, please use setupper.exe.
 
 The button layout of SimpleBrowser is customizable by editing the following text files:
 
