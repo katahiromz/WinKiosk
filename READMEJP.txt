@@ -43,7 +43,7 @@ Alt+F4 と Ctrl+K と Alt+F は覚えておいて下さい。
 Windows 10の場合は、OSのアクティブ時間を設定して下さい。
 
 スタートアップに登録しておけば、Windowsを再起動すると、自動的に WinKiosk が起動されます。
-スタートアップに登録/削除するには、setupper.exeをお使い下さい。
+スタートアップに登録またはスタートアップから削除するには、setupper.exeをお使い下さい。
 
 SimpleBrowser のボタンは
 
