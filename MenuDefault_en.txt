@@ -1,0 +1,19 @@
+﻿;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Menu Items
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; <menu-item-text><TAB><command-id-or-url>
+Select All	#31
+Print...	#27
+Print Preview...	#2003
+Save As...	#20015
+(Separator)	#0
+Create shortcut	#2266
+View source	#20018
+(Separator)	#0
+Refresh	#2300
+(Separator)	#0
+Copy page title	#20058
+Copy page address	#20059
+Copy page title and address	#20060
+(Separator)	#0
+Copy page image	#20061

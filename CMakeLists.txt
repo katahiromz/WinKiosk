@@ -59,7 +59,7 @@ endif()
 
 ##############################################################################
 
-subdirs(KeybdSystem SimpleBrowser)
+subdirs(KeybdSystem SimpleBrowser setupper)
 
 # WinKiosk.exe
 add_executable(WinKiosk WIN32 WinKiosk.cpp WinKiosk_res.rc)

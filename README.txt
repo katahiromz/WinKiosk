@@ -1,7 +1,7 @@
 # WinKiosk by katahiromz
 
 WinKiosk is a freeware kiosk system for Windows.
-It works in Windows XP/Vista/7/10.
+It works in Windows Vista/7/10.
 
 ## Composition
 
@@ -39,11 +39,11 @@ You have to remember Alt+F4, Ctrl+K and Alt+F.
 
 ## Initial settings
 
-After installing WinKiosk with the installer, it's ready for kiosk terminal.
+Please set the OS active hours if you use in Windows 10.
 
-Please set the OS active hours if you use Windows 10.
-
-When you restart Windows, WinKiosk will be launched automatically.
+If WinKiosk is registered to Windows startup,
+WinKiosk will be launched automatically when you restart Windows.
+To register/unregister WinKiosk to Windows startup, use setupper.exe.
 
 The button layout of SimpleBrowser is customizable by editing the following text files:
 

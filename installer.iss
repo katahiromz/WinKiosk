@@ -43,6 +43,7 @@ Name: "japanese"; MessagesFile: "compiler:Languages\Japanese.isl"
 
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"
+Name: "regstartup"; Description: "{cm:RegisterToStartup}"; GroupDescription: "{cm:AdditionalIcons}"
 
 [Files]
 Source: "README.txt"; DestDir: "{app}"; Flags: ignoreversion
@@ -55,6 +56,7 @@ Source: "build\bin\EasyEn.keybd"; DestDir: "{app}\plugins"; Flags: ignoreversion
 Source: "build\bin\SimpleJP.keybd"; DestDir: "{app}\plugins"; Flags: ignoreversion
 Source: "build\bin\EasyJP.keybd"; DestDir: "{app}\plugins"; Flags: ignoreversion
 Source: "build\bin\SimpleNumPad.keybd"; DestDir: "{app}\plugins"; Flags: ignoreversion
+Source: "build\setupper.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "Upside_en.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "Upside_ja.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "Downside_en.txt"; DestDir: "{app}"; Flags: ignoreversion
@@ -63,12 +65,21 @@ Source: "LeftSide_en.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "LeftSide_ja.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "RightSide_en.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "RightSide_ja.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "MenuAnchor_en.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "MenuAnchor_ja.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "MenuDefault_en.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "MenuDefault_ja.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "MenuImage_en.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "MenuImage_ja.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "MenuText_en.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "MenuText_ja.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "SimpleBrowser\resource.h"; DestDir: "{app}"; Flags: ignoreversion
 
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
 Name: "{group}\WinKiosk"; Filename: "{app}\WinKiosk.exe"
+Name: "{group}\setupper"; Filename: "{app}\setupper.exe"
 Name: "{group}\{cm:ReadmeEnglish}"; Filename: "{app}\README.txt"
 Name: "{group}\{cm:ReadmeJapanese}"; Filename: "{app}\READMEJP.txt"
 Name: "{group}\{cm:LicenseEnglish}"; Filename: "{app}\LICENSE.txt"
@@ -77,19 +88,21 @@ Name: "{group}\{cm:UninstallProgram,WinKiosk}"; Filename: "{uninstallexe}"
 Name: "{commondesktop}\WinKiosk"; Filename: "{app}\WinKiosk.exe"; Tasks: desktopicon
 
 [Run]
-Filename: "{app}\WinKiosk.exe"; Flags: nowait; Parameters: "--install"
+Filename: "{app}\setupper.exe"; Flags: nowait; Parameters: "--install"; Tasks: regstartup
 Filename: "notepad.exe"; Flags: nowait; Parameters: "{app}\{cm:ReadMeTxt}"
 Filename: "explorer.exe"; Flags: nowait; Parameters: "{app}"
 
 [UninstallRun]
-Filename: "{app}\WinKiosk.exe"; Flags: nowait; Parameters: "--uninstall"
+Filename: "{app}\setupper.exe"; Flags: nowait; Parameters: "--uninstall"; Tasks: regstartup
 
 [CustomMessages]
 english.ReadmeEnglish=ReadMe (English)
 english.ReadmeJapanese=ReadMe (Japanese)
 english.LicenseEnglish=License (English)
 english.ReadMeTxt=ReadMe.txt
+english.RegisterToStartup=Register to Windows startup
 japanese.ReadmeEnglish=ReadMe (英語)
 japanese.ReadmeJapanese=読んでね (日本語)
 japanese.LicenseEnglish=ライセンス (英語)
 japanese.ReadMeTxt=ReadMeJP.txt
+japanese.RegisterToStartup=スタートアップに登録する

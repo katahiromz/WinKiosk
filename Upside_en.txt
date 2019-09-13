@@ -1,10 +1,16 @@
-﻿; <button-height>	<button-background-color>	<button-text-color>
-60	#EEEEEE	#000000
+﻿; <button-height><TAB><button-background-color><TAB><button-text-color>
+50	#EEEEEE	#000000
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; Buttons
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; <button-text>	<button-width>	<command-id-or-url-or-command-line>
-< Back	80	#101
-Forward >	80	#102
-Address Bar	*	#105
-Go >	80	#106
+; <button-text><TAB><button-width><TAB><command-id-or-url-or-command-line>
+< Back	80	#20001
+Forward >	80	#20002
+(Separator)	20	#0
+Stop/Reload	80	#20003
+(Separator)	20	#0
+Home	80	#20004
+Address Bar	*	#20005
+Go >	80	#20006
+(Separator)	20	#0
+...	80	#20017

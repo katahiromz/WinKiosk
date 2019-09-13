@@ -1,16 +1,15 @@
-﻿; <button-width>	<button-background-color>	<button-color>
+﻿; <button-width><TAB><button-background-color><TAB><button-color>
 120	#EEEEEE	#000000
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; Buttons
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; <button-text>	<button-height>	<command-id-or-url-or-command-line>
-Home	60	#104
-Stop/Reload	60	#103
-Move Up	60	#132
-Move Down	60	#133
-Page Setup	60	#114
-Print Preview	60	#113
-Print...	60	#111
-Cancel Printing	60	#131
-Keyboard	60	KeybdSystem.exe --name "Easy English Keyboard"
-...	60	#117
+; <button-text><TAB><button-height><TAB><command-id-or-url-or-command-line>
+Move Up	50	#20032
+Move Down	50	#20033
+(Separator)	20	#0
+Print Preview	50	#20013
+Print...	50	#20011
+Cancel Printing	50	#20031
+(Separator)	20	#0
+Zoom Up (+)	50	#20034
+Zoom Down (-)	50	#20035
