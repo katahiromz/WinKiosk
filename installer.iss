@@ -12,7 +12,7 @@
 
 AppId={{144975A1-E9CC-4C19-9028-7FADFAEE8C8A}
 AppName=WinKiosk
-AppVerName=WinKiosk 0.9
+AppVerName=WinKiosk 1.0
 AppPublisher=Katayama Hirofumi MZ
 AppPublisherURL=http://katahiromz.web.fc2.com/
 AppSupportURL=http://katahiromz.web.fc2.com/
@@ -23,7 +23,7 @@ DisableDirPage=no
 AllowNoIcons=yes
 LicenseFile=LICENSE.txt
 OutputDir=.
-OutputBaseFilename=WinKiosk-0.9-setup
+OutputBaseFilename=WinKiosk-1.0-setup
 SetupIconFile=res\Icon_1.ico
 Compression=lzma
 SolidCompression=yes
@@ -33,9 +33,9 @@ VersionInfoCompany=Katayama Hirofumi MZ
 VersionInfoCopyright=Copyright (C) 2019 Katayama Hirofumi MZ.
 VersionInfoDescription=Windows Kiosk System
 VersionInfoProductName=WinKiosk
-VersionInfoProductTextVersion=0.9
-VersionInfoProductVersion=0.9
-VersionInfoVersion=0.9
+VersionInfoProductTextVersion=1.0
+VersionInfoProductVersion=1.0
+VersionInfoVersion=1.0
 
 [Languages]
 Name: "english"; MessagesFile:  "compiler:Default.isl"
