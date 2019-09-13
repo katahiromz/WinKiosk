@@ -13,3 +13,5 @@ Cancel Printing	50	#20031
 (Separator)	20	#0
 Zoom Up (+)	50	#20034
 Zoom Down (-)	50	#20035
+(Separator)	20	#0
+Keyboard 60	KeybdSystem.exe --name "Easy English Keyboard"
